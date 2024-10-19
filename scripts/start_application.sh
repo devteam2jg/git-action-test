@@ -9,7 +9,7 @@ cd /home/ubuntu/project/develop/git-action-test || exit
 echo "Starting the application..."
 # Replace 'your_application_command' with the actual command to start your application
 pnpm install
-nohup pnpm run start 
+nohup pnpm run start& 
 
 # Check if the application started successfully
 if [ $? -eq 0 ]; then
