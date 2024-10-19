@@ -3,14 +3,14 @@ os: linux
 files:
   - source: .
     destination: /home/ubuntu/project/develop/git-action-test/
-hooks:    
-  hooks:
-    ApplicationStop:
-      - location: scripts/stop_application.sh
-        timeout: 300
-        runas: ubuntu
-
-    ApplicationStart:
-      - location: scripts/start_application.sh
-        timeout: 300
-        runas: ubuntu
+   
+hooks:
+  ApplicationStop:
+    - location: scripts/stop_application.sh
+      timeout: 300
+      runas: ubuntu
+  
+  ApplicationStart:
+    - location: scripts/start_application.sh
+      timeout: 300
+      runas: ubuntu
