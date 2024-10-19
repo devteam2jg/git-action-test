@@ -1,15 +1,15 @@
 #!/bin/bash
 
 # Find the process running on port 3000 and terminate it
-PORT=3000
+sudo PORT=3000
 
 # Get the process ID (PID) using lsof
-PID=$(lsof -t -i:$PORT)
+sudo PID=$(lsof -t -i:$PORT)
 
 if [ -n "$PID" ]; then
-    echo "Stopping process running on port $PORT with PID $PID"
-    kill -9 $PID
-    echo "Process terminated."
+    sudo echo "Stopping process running on port $PORT with PID $PID"
+    sudo kill -9 $PID
+    sudo echo "Process terminated."
 else
-    echo "No process found running on port $PORT."
+    sudo echo "No process found running on port $PORT."
 fi
