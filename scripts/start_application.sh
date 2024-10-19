@@ -12,6 +12,7 @@ pnpm install
 nohup npm run start >> /home/ubuntu/project/develop/git-action-test/scripts/scripts.log 2>&1 &
 
 
+
 # Check if the application started successfully
 if [ $? -eq 0 ]; then
     echo "Application started successfully."
