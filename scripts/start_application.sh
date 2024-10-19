@@ -8,7 +8,7 @@ cd /home/ubuntu/project/develop/git-action-test || exit
 # Start the application
 echo "Starting the application..."
 # Replace 'your_application_command' with the actual command to start your application
-pnpm install
+npm install
 nohup npm run start >> /home/ubuntu/project/develop/git-action-test/scripts/scripts.log 2>&1 &
 
 
