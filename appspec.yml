@@ -3,7 +3,12 @@ os: linux
 files:
   - source: .
     destination: /home/ubuntu/project/develop/git-action-test/
-   
+  
+permissions:
+  - object: /home/ubuntu/project/develop/git-action-test/
+    pattern: "**"
+    owner: root
+    group: root
 hooks:
   ApplicationStop:
     - location: scripts/stop_application.sh
